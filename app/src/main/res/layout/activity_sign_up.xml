@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".activity.SignUp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="Student Registration"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:maxLines="1"/>
+
+
+    <EditText
+        android:id="@+id/usnEditText"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="121dp"
+        android:background="@drawable/round_back"
+        android:hint="Enter usn"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/mobileNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/usnEditText"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/round_back"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sendOTPButton"
+        android:layout_width="204dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/mobileNumberEditText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="201dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="21dp"
+        android:background="@drawable/input"
+        android:backgroundTint="@color/lavender"
+        android:text="Verify"
+        android:textAllCaps="false" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="376dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/mobileNumberEditText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/round_back"
+        android:hint="Enter password"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/cpassword"
+        android:layout_width="379dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/password"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/round_back"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:visibility="gone"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button7"
+        android:layout_width="275dp"
+        android:layout_height="76dp"
+        android:layout_below="@+id/cpassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="182dp"
+        android:background="@drawable/input"
+        android:backgroundTint="@color/lavender"
+        android:text="Sing Up"
+        android:textAllCaps="false"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

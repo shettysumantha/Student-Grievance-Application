@@ -1,0 +1,410 @@
+<!-- activity_main.xml -->
+
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!-- Main Content -->
+
+    <!-- Navigation Drawer -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="450dp"
+                android:layout_height="48dp"
+                android:background="@color/purple_200"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:title="Student Grieviance app"
+                app:titleMarginStart="10dp" />
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="362dp"
+                android:layout_height="211dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                app:srcCompat="@drawable/top_background" />
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imageView9"
+                android:layout_width="133dp"
+                android:layout_height="105dp"
+                android:layout_marginEnd="32dp"
+                android:src="@drawable/imgbin_graduation_ceremony_square_academic_cap_computer_icons_student_graduate_university_bachelor_ck5bhgeswgrh80c5t3b6zvzkg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.27"
+                app:riv_oval="true"
+                app:srcCompat="@drawable/imgbin_graduation_ceremony_square_academic_cap_computer_icons_student_graduate_university_bachelor_ck5bhgeswgrh80c5t3b6zvzkg" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="144dp"
+                android:layout_height="68dp"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="20dp"
+                android:text="Hello everyone"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+            <LinearLayout
+                android:layout_width="258dp"
+                android:layout_height="98dp"
+                android:background="@drawable/white_button"
+                android:orientation="horizontal"
+                android:backgroundTint="#c8c8fe"
+
+                app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageView8"
+                app:layout_constraintVertical_bias="0.489">
+
+                <LinearLayout
+                    android:layout_width="107dp"
+                    android:layout_height="83dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/purple_top"
+                    android:orientation="vertical" >
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/home"
+                        app:riv_oval="true"
+                        android:id="@+id/home"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="107dp"
+                    android:layout_height="83dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/purple_top"
+                    android:orientation="vertical">
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/message"
+                        app:riv_oval="true"
+                        android:id="@+id/notification"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="107dp"
+                    android:layout_height="83dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/purple_top"
+                    android:orientation="vertical" >
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/about"
+                        app:riv_oval="true"
+                        android:id="@+id/about"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="688dp">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="25dp"
+                        android:text="Grievience Category"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <GridLayout
+                        android:layout_width="425dp"
+                        android:layout_height="678dp"
+                        android:layout_marginLeft="10dp"
+                        android:columnCount="2"
+                        android:rowCount="4">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card1"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="70dp"
+                            android:layout_marginBottom="189dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="2dp"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <com.makeramen.roundedimageview.RoundedImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/academic"
+                                    app:riv_oval="true" />
+
+                                <TextView
+                                    android:layout_width="146dp"
+                                    android:layout_height="32dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:gravity="center"
+                                    android:text="Academic Issues"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card2"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="70dp"
+                            android:layout_marginBottom="189dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="0dp"
+                                android:orientation="vertical"
+                                android:padding="0dp">
+
+                                <com.makeramen.roundedimageview.RoundedImageView
+                                    android:layout_width="102dp"
+                                    android:layout_height="100dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/daco_3637504"
+                                    app:riv_oval="true" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="52dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:gravity="center"
+                                    android:text="Admisitrative and Financial Matters"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card3"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="250dp"
+                            android:layout_marginBottom="189dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <com.makeramen.roundedimageview.RoundedImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/facilities"
+                                    app:riv_oval="true" />
+
+                                <TextView
+                                    android:layout_width="150dp"
+                                    android:layout_height="43dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:gravity="center"
+                                    android:text="Facilities and Infrastructure"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card4"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_row="0"
+                            android:layout_column="1"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="250dp"
+                            android:layout_marginBottom="189dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="2dp"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <com.makeramen.roundedimageview.RoundedImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/student_services"
+                                    app:riv_oval="true" />
+
+                                <TextView
+                                    android:layout_width="146dp"
+                                    android:layout_height="32dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:gravity="center"
+                                    android:text="Student Services"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card5"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="430dp"
+                            android:layout_marginBottom="189dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="2dp"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <com.makeramen.roundedimageview.RoundedImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/campus"
+                                    app:riv_oval="true" />
+
+                                <TextView
+                                    android:layout_width="146dp"
+                                    android:layout_height="32dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:gravity="center"
+                                    android:text="Campus Climate"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card6"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_row="0"
+                            android:layout_column="1"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="430dp"
+                            android:layout_marginBottom="189dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <com.makeramen.roundedimageview.RoundedImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/discrmination"
+                                    app:riv_oval="true" />
+
+                                <TextView
+                                    android:layout_width="150dp"
+                                    android:layout_height="41dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:gravity="center"
+                                    android:text="Discrimination and Harassement"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                    </GridLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+
+
+        <!-- Your main content goes here -->
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/sidemenu"
+        app:headerLayout="@layout/navigation_header" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

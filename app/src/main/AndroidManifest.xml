@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.studentgrievieance">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StudentGrievieance"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".StudentData"
+            android:exported="false" />
+        <activity
+            android:name=".ViewStudentDetails"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewGrievances"
+            android:exported="false" />
+        <activity
+            android:name=".activity.feedback"
+            android:exported="false" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".activity.password"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Home"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Adminlogin"
+            android:exported="false" />
+        <activity
+            android:name=".activity.About"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AdminDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Details"
+            android:exported="false" />
+        <activity
+            android:name=".StudentGrievanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AddStudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Profile"
+            android:exported="false" />
+        <activity
+            android:name=".activity.postComplaint"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Description"
+            android:exported="false" />
+        <activity
+            android:name=".activity.OtpValidation"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".activity.dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".activity.welcome"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
